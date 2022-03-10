@@ -1,0 +1,469 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+/* common */
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+html {
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #2c2c2c;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.65;
+  letter-spacing: -0.2px;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: #f5d042;
+}
+
+.color-txt {
+  color: #4c45d1;
+}
+
+.content {
+  background-color: #fff;
+  padding: 1.5rem;
+  overflow: auto;
+  max-width: 768px;
+  min-width: 350px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 1.7;
+}
+
+.last-section {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ececec;
+}
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background-color: #4c45d1;
+  color: #fff;
+  font-weight: 800;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+.btn-container {
+  margin: 3rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #3934a0;
+}
+.btn:disabled {
+  background-color: #999;
+}
+
+/* title */
+.lg-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+.md-title {
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.sm-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.section-title {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  background-color: #2c2c2c;
+  color: #fff;
+  margin: 2rem 0 1rem 0;
+}
+
+.sm {
+  font-size: 0.85rem;
+  color: #555555;
+}
+.bold {
+  font-weight: 800;
+}
+.color-intro {
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  background-color: #e4e4e4;
+}
+.gray {
+  background-color: #ececec !important;
+}
+
+.gray-txt {
+  color: #777;
+}
+
+.division {
+  width: 100%;
+  height: 12px;
+}
+
+.indent {
+  margin-left: 0.5rem;
+}
+.indent2 {
+  margin-left: 1rem;
+}
+.indent3 {
+  margin-left: 1.5rem;
+}
+
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+
+.question {
+  font-weight: 500;
+  margin: 1rem 0.5rem 0.3rem 0.5rem;
+  line-height: 1.45;
+}
+
+.lined-input {
+  border: 0;
+  outline: 0;
+  width: 12rem;
+  padding: 0.2rem;
+  border-bottom: 1px solid #a7a7a7;
+  font-size: 1rem;
+}
+.lined-input::placeholder {
+  color: #888;
+  font-size: 0.85rem;
+  letter-spacing: -1px;
+}
+
+.answer {
+  margin: 0.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  line-height: 2;
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.answer label {
+  margin-right: 1.2rem;
+}
+
+hr {
+  border: 1px solid #ececec;
+  margin: 2rem 0.5rem 1.5rem 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex-ver {
+  display: flex;
+  align-items: center;
+}
+.flex-hor {
+  display: flex;
+  justify-content: center;
+}
+.flex-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  text-align: end;
+}
+
+/* table */
+table,
+th,
+td {
+  border: 1px solid #2c2c2c;
+  text-align: center;
+  vertical-align: middle;
+}
+table {
+  width: 100%;
+  font-size: 0.95rem;
+}
+.table-content {
+  padding: 0.5rem 0;
+  line-height: 1.45;
+}
+.lb {
+  font-size: 0.85rem;
+  letter-spacing: -1px;
+  color: #424242;
+  margin: 0 !important;
+}
+.w10 {
+  width: 10%;
+}
+.w20 {
+  width: 20%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w70 {
+  width: 70%;
+}
+
+th {
+  background-color: #ececec;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  padding: 0.2rem;
+}
+.rowspan {
+  background-color: #ececec;
+  width: 10%;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+.table-input {
+  border: 0;
+  width: 100%;
+  outline: 0;
+  padding: 0.2rem;
+}
+
+.block {
+  display: block !important;
+}
+.etc {
+  width: 100%;
+}
+.mg-l {
+  margin-left: 0.5rem;
+}
+.mg-l2 {
+  margin-left: 1rem;
+}
+.mg-b {
+  margin-bottom: 0.5rem;
+}
+.mg-b2 {
+  margin-bottom: 1rem;
+}
+.mg-b3 {
+  margin-bottom: 1.5rem;
+}
+.mg-b4 {
+  margin-bottom: 2rem;
+}
+.mg-b5 {
+  margin-bottom: 3rem;
+}
+.mg-all {
+  margin: 0.5rem;
+}
+.mg-r {
+  margin-right: 0.5rem;
+}
+.mg-r2 {
+  margin-right: 1rem;
+}
+.mg-r3 {
+  margin-right: 1.5rem;
+}
+
+.mg-t {
+  margin-top: 0.5rem;
+}
+.mg-t2 {
+  margin-top: 1rem;
+}
+.mg-t3 {
+  margin-top: 1.5rem;
+}
+.mg-t4 {
+  margin-top: 2rem;
+}
+.pd {
+  padding: 0.5rem;
+}
+.pd2 {
+  padding: 1rem;
+}
+.pd3 {
+  padding: 1.5rem;
+}
+.pd-ver {
+  padding: 1rem 0;
+}
+.width90 {
+  width: 90%;
+}
+.last-text {
+  font-size: 0.9rem;
+  color: #727272;
+  font-weight: 400;
+}
+
+td input[type='checkbox'] {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+textarea {
+  padding: 0.5rem;
+}
+
+/* radio */
+.radio-label,
+.chk-label {
+  display: block;
+  position: relative;
+  padding-left: 1.6rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-label input[type='text'] {
+  width: 10rem;
+  padding-bottom: 0.2rem;
+  margin: 0 0.5rem 0 0.2rem;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+}
+
+/* Hide the browser's default radio button */
+.radio-label .radio-input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-label .radio-input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-label .checkmark,
+.chk-label .checkmark {
+  position: absolute;
+  top: 0.45rem;
+  left: 0;
+  border-radius: 50%;
+  font-size: 0.6em;
+  width: 1.2rem;
+  line-height: 1.1rem;
+  border: 1px solid #2c2c2c;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-label .radio-input:checked ~ .checkmark,
+.chk-label .chk-input:checked ~ .checkmark {
+  background-color: #4c45d1;
+  color: white;
+  border-color: #4c45d1;
+}
+
+.radio-label .radio-input:checked ~ .text,
+.chk-label .chk-input:checked ~ .text {
+  color: #4c45d1;
+  font-weight: 800;
+}
+
+/* 체크박스 CSS */
+/* Hide the browser's default checkbox */
+.chk-label .chk-input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.lg-chk {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+input[type='text'] {
+  padding: 0.5rem;
+}
+
+input.phone {
+  padding: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+/* mobile */
+@media (max-width: 650px) {
+  .content {
+    padding: 1rem;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 649px) {
+  .lg-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .flex-space {
+    display: block !important;
+  }
+}
